@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: gray;
+    display: flex;
+}
+
+.left-part{
+    background-color: black;
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.right-part{
+    width: 60%;
+    height: 100vh;
+    background-image: url(./netflix-bg3.png);
+    background-position: center;
+    background-size: cover;
+}
+.left-part input{
+    border: 1px solid rgb(65, 64, 64);
+    margin: 15px;
+    height: 6vh;
+    width: 60%;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+.left-part p{
+    color: white;
+    font-size: 0.9em;
+
+}
+.left-part p a{
+    color: red;
+}
+
+.left-part button{
+    background-color: rgb(207, 0, 0);
+    color: white;
+    border: 1px solid rgb(65, 64, 64);
+    margin: 10%;
+    height: 6vh;
+    width: 65%;
+    border-radius: 5px;
+
+}
+
+.left-part span{
+    margin-top: 8%;
+}
+.left-part span p{
+    font-size: 1em;
+}
+
+@media (max-width: 480px) {
+
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .left-part{
+        width: 100%;
+        height: auto;
+
+    }
+    .right-part{
+        display: none;
+        height: auto;
+    }
+    .left-part p{
+        text-align: center;
+    }
+
+    
+}

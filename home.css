@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh; 
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.556) 0, rgba(0, 0, 0, 0.507) 60%, rgba(0, 0, 0, 0.567) 100%), url(./Home-bg.png);
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.header img{
+    width: 10%;
+    height: 20vh;
+    margin-left: 180px;
+
+
+} 
+
+.header span{
+    display: flex;
+    margin-right: 100px;
+}
+
+#eng-btn{
+    width: 120px;
+    height: 4vh;
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    border: 1px solid rgb(101, 101, 101);
+}
+
+.header button{
+    width: 70px;
+    height: 4vh;
+    margin-right: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 4px;
+    border: none;
+}
+
+.hero{
+    width: 100%;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.hero h2{
+    font-size: 50px;
+}
+
+.hero p{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.hero span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.hero input{
+    height: 7vh;
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.412);
+    padding-left: 20px;
+    margin: 4px;
+}
+
+::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.hero button{
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: red;
+    height: 7vh;
+    width: 40%;
+    font-size: larger;
+    border-radius: 4px;
+    border: none;
+    
+}
+
