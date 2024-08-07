@@ -1,83 +1,305 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+
 }
 
 .container{
-    background-color: gray;
-    display: flex;
-}
-
-.left-part{
-    background-color: black;
-    height: 100vh;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-.right-part{
-    width: 60%;
-    height: 100vh;
-    background-image: url(./netflix-bg3.png);
+    width: 100%;
+    height: 100vh; 
+    border-bottom: 10px solid rgb(25, 25, 25);
     background-position: center;
     background-size: cover;
-}
-.left-part input{
-    border: 1px solid rgb(65, 64, 64);
-    margin: 15px;
-    height: 6vh;
-    width: 60%;
-    border-radius: 5px;
-    padding-left: 30px;
-}
-.left-part p{
-    color: white;
-    font-size: 0.9em;
-
-}
-.left-part p a{
-    color: red;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.556) 0, rgba(0, 0, 0, 0.507) 60%, rgba(0, 0, 0, 0.567) 100%), url(./home1.jpg);
 }
 
-.left-part button{
-    background-color: rgb(207, 0, 0);
-    color: white;
-    border: 1px solid rgb(65, 64, 64);
-    margin: 10%;
-    height: 6vh;
-    width: 65%;
-    border-radius: 5px;
-
-}
-
-.left-part span{
-    margin-top: 8%;
-}
-.left-part span p{
-    font-size: 1em;
-}
-
-@media (max-width: 480px) {
-
-    .container{
-        width: 100%;
-        height: 100vh;
-    }
-    .left-part{
-        width: 100%;
-        height: auto;
-
-    }
-    .right-part{
-        display: none;
-        height: auto;
-    }
-    .left-part p{
-        text-align: center;
-    }
-
+.header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
+    
+}
+
+.header img{
+    width: 10%;
+    height: 20vh;
+    margin-left: 180px;
+
+
+} 
+
+.header span{
+    display: flex;
+    margin-right: 100px;
+}
+
+#eng-btn{
+    width: 120px;
+    height: 4vh;
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    border: 1px solid rgb(101, 101, 101);
+}
+
+.header button{
+    width: 70px;
+    height: 4vh;
+    margin-right: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 4px;
+    border: none;
+}
+
+.hero{
+    width: 100%;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.hero h2,
+.hero1 h2{
+    font-size: 50px;
+}
+
+.hero p
+.hero1 p{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.hero span,
+.hero1 span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.hero input{
+    height: 7vh;
+    width: 450px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: rgba(49, 48, 48, 0.412);
+    padding-left: 20px;
+    margin: 4px;
+}
+
+::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.hero button,
+.hero1 button{
+    color: white;
+    font-size: 10px;
+    font-weight: bolder;
+    background-color: red;
+    height: 7vh;
+    width: 50%;
+    margin-left: 6px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    
+}
+
+.tv-section{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    color: white;
+    display: flex;
+    border-bottom: 10px solid rgb(26, 26, 26);
+}
+
+.text-section{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-section h1{
+    font-size: 50px;
+    
+}
+
+.text-section p{
+    font-size: 20px;
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 60px;
+    
+}
+
+.text1,
+.text3{
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.text1 h1,
+.text3 h1{
+    width: 70%;
+    font-size: 50px;
+}
+.text2{
+    width: 80%;
+    margin-left: 180px;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.text2 h1{
+    padding-block: 10px;
+    font-size: 50px;
+}
+.text2 p{
+    font-size: 20px;
+}
+
+.video-section{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.video-section video{
+    width: 80%; 
+}
+.video2-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video2-section video{
+    width: 75%;
+}
+.faq-section{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding-block: 50px;
+}
+
+.faq-section h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.faq-box{
+    width: 100%;
+    height: auto;
+    padding-block: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box{
+    width: 80%;
+    height: 80px;
+    margin-top: 10px;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-box span{
+    width: 90%;
+    height: auto;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+.hero1 input{
+    height: 8vh;
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: rgba(37, 36, 36, 0.347);
+    padding-left: 20px;
+    margin: 4px;
+}
+.hero1 p{
+    color: white;
+    margin-block: 30px;
+    font-size: 20px;
+}
+
+.footer-section{
+    width: 100%;
+    height: auto;
+    padding-block: 40px;
+    background-color: black;
+    border-top: 10px solid rgb(26, 26, 26);
+
+
+
+}
+.footer-section span{
+    display: flex;
+    margin-left: 20px;
+}
+.footer-section p{
+    color: white;
+}
+.footer-section a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.list-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    padding-block: 30px;
+}
+.list-section ul{
+    width: 30%;
+    margin-left: 160px;
+}
+.list-section ul li{
+    font-size: 12px;
+    list-style: none;
+    line-height: 40px;
+}
+.footer-section button{
+    margin-left: 160px;
+}
+.footer-section p{
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    margin-left: 160px;
 }
